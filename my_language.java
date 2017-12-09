@@ -26,12 +26,12 @@ public class my_language {
 	public void assignment(String s){
 		s = s.replaceAll("\\s+", "");
 		
-		if(s.length() <= 0){
-			System.out.println("Syntax error: no instructions");
+		if(s.length() <= 1){
+			System.out.println("Syntax error: no assignments");
 			return;
 		}
 		if(s.indexOf("=") < 0 || s.indexOf("=") != s.lastIndexOf("=")){
-			System.out.println("Syntax error: no equal sign");
+			System.out.println("Syntax error: no assignments");
 			return;
 		}
 		if(s.indexOf(";") != s.length() - 1){
