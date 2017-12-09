@@ -12,7 +12,10 @@ public class my_language {
         while(true){
         	try {
                 String s = in.nextLine();
-                program.assignment(s);
+		String[] ass = s.split("(?<=;)");
+                for(String as: ass){
+                	program.assignment(as);
+                }
             }catch(Exception e){
             	break;
             }
